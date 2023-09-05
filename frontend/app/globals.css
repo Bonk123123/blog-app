@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navbar-dark-color:#222222;
+  --body-light-color: white;
+  --navbar-light-color: white;
+  --body-dark-color: #141414;
+
+  --text-color: #E1E3E6;
+  --text-dark-color: black;
+}
+
+
+.loader {
+   width: 48px;
+   height: 48px;
+   border: 5px solid;
+   border-bottom-color: transparent;
+   border-radius: 50%;
+   display: inline-block;
+   box-sizing: border-box;
+   animation: rotation 1s linear infinite;
+   }
+
+   @keyframes rotation {
+   0% {
+       transform: rotate(0deg);
+   }
+   100% {
+       transform: rotate(360deg);
+   }
+  }
